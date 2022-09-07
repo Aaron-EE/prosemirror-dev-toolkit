@@ -98,7 +98,7 @@
   <PasteModal isOpen={modalOpen} on:submit={handlePasteSubmit} on:close={handleCloseModal} />
   <div class="floating-dock" style={`top: ${dockTop}%; height: ${dockHeight}%;`}>
     <div class="resizing-div" on:mousedown={handleResizeMouseDown} />
-    <div class="container">
+    <div class="pm-dev-container">
       <div>
         <button class="btn copy-btn" on:click={handleCopyDoc}>Copy</button>
         <button class="btn save-btn" on:click={handleSaveSnapshot}>Save</button>
@@ -163,7 +163,7 @@
     width: 100%;
     cursor: row-resize;
   }
-  .container {
+  .pm-dev-container {
     height: 100%;
   }
   .btn {

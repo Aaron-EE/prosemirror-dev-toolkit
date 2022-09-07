@@ -67,7 +67,7 @@ exports[`DevTools.svelte > should open by clicking the floating button 1`] = `
           />
            
           <div
-            class="container s-FloatingDock-1i2szdk"
+            class="pm-dev-container s-FloatingDock-1i2szdk"
           >
             <div
               class="s-FloatingDock-1i2szdk"
@@ -271,7 +271,7 @@ exports[`DevTools.svelte > should render 1`] = `
           />
            
           <div
-            class="container s-FloatingDock-1i2szdk"
+            class="pm-dev-container s-FloatingDock-1i2szdk"
           >
             <div
               class="s-FloatingDock-1i2szdk"
