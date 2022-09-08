@@ -1,6 +1,7 @@
 {
   "version": "1.0.2",
   "private": true,
+  "name": "prosemirror-dev-toolkit",
   "workspaces": [
     "core",
     "example-app"
