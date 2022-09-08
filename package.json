@@ -1,17 +1,21 @@
 {
-  "version": "1.0.2",
   "private": true,
-  "name": "prosemirror-dev-toolkit",
   "workspaces": [
     "core",
     "example-app"
   ],
+  "main": "core/dist/index.cjs",
+  "module": "core/dist/index.js",
+  "types": "core/dist/index.d.ts",
+  "type": "module",
+  "version": "1.0.3",
   "scripts": {
     "format": "prettier --write \"**/*.+(js|jsx|json|html|css|less|scss|ts|tsx|svelte|yml|yaml|md|graphql|mdx)\" .",
     "lint:fix": "eslint --ignore-path .gitignore --fix --ext .js,.cjs,.ts,.tsx,.svelte .",
     "app": "yarn --cwd example-app start",
     "kit": "yarn --cwd core watch",
-    "start": "concurrently --kill-others 'cd ./core && yarn watch' 'cd example-app && yarn start'"
+    "start": "concurrently --kill-others 'cd ./core && yarn watch' 'cd example-app && yarn start'",
+    "postinstall": "cd core && yarn install && yarn build"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.30.6",
