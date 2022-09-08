@@ -100,11 +100,11 @@
     <div class="resizing-div" on:mousedown={handleResizeMouseDown} />
     <div class="pm-dev-container">
       <div>
-        <button class="btn copy-btn" on:click={handleCopyDoc}>Copy</button>
-        <button class="btn save-btn" on:click={handleSaveSnapshot}>Save</button>
-        <button class="btn import-btn" on:click={handleImportSnapshot}>Import</button>
-        <button class="btn paste-btn" on:click={handlePasteSnapshot}>Paste</button>
-        <button class="btn close-btn" aria-label="Close dev-toolkit" on:click={onClose}>X</button>
+        <button class="devtools-btn copy-btn" on:click={handleCopyDoc}>Copy</button>
+        <button class="devtools-btn save-btn" on:click={handleSaveSnapshot}>Save</button>
+        <button class="devtools-btn import-btn" on:click={handleImportSnapshot}>Import</button>
+        <button class="devtools-btn paste-btn" on:click={handlePasteSnapshot}>Paste</button>
+        <button class="devtools-btn close-btn" aria-label="Close dev-toolkit" on:click={onClose}>X</button>
       </div>
       <input
         style="display:none"
@@ -166,7 +166,7 @@
   .pm-dev-container {
     height: 100%;
   }
-  .btn {
+  .devtools-btn {
     background: rgba($color-red-light, 0.6);
     border: 0;
     border-radius: 3px;
