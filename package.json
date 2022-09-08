@@ -1,4 +1,5 @@
 {
+  "name": "prosemirror-dev-toolkit",
   "private": true,
   "workspaces": [
     "core",
